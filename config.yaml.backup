@@ -1,0 +1,30 @@
+hardware:
+  cpu_threads: 10
+  device_id: 0
+  enable_mkldnn: true
+  mode: gpu_metal
+logging:
+  file: /Users/ybl/Document/log/doc-arena/ocr_extractor.log
+  level: INFO
+ocr:
+  det_db_box_thresh: 0.6
+  det_db_thresh: 0.3
+  det_db_unclip_ratio: 1.5
+  lang: ch
+  max_side_len: 4096
+  model_dir: /Volumes/VOL/Models/other/PaddleOCR
+  model_name: PaddleOCR-VL-1.6
+  rec_batch_num: 6
+  show_log: false
+  use_angle_cls: true
+output:
+  confidence_threshold: 0.5
+  format: json
+  output_dir: output
+  save_images: false
+processing:
+  binarization: false
+  denoise: true
+  enhance_contrast: true
+  image_preprocessing: true
+  pdf_dpi: 300
